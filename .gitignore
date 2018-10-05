@@ -1,6 +1,7 @@
 #Packages
 /node_modules
 /platforms
+/plugins
 /.sourcemaps
 /.vscode
 /typings
