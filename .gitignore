@@ -1,0 +1,12 @@
+#Packages
+/node_modules
+/platforms
+/.sourcemaps
+/.vscode
+/typings
+/platforms/android
+/package.json
+/package-lock.json
+/tslint.json
+/.editorconfig
+/tsconfig.json

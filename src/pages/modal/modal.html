@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Add a new to-do
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form (ngSubmit)="addTodoItem()">
+    <ion-list>
+      <ion-item>
+        <h2>You can add new to-do in few steps</h2>
+        <p>Just enter what it takes to have it done!</p>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-input type="text" [(ngModel)]="title" name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Description</ion-label>
+        <ion-input type="text" [(ngModel)]="description" name="description"></ion-input>
+      </ion-item>
+      <ion-item></ion-item>
+    </ion-list>
+  </form>
+  <div padding>
+    <button ion-button color="primary" block (click) = "addTodoItem()">Add to-do</button>
+  </div>
+</ion-content>

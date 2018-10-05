@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{selectedItem.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngIf="selectedItem">
+    <ion-card-header>
+      <h2>{{selectedItem.title}}</h2>
+    </ion-card-header>
+    <ion-card-content>
+      <p *ngIf="selectedItem" class="item-note">
+        {{selectedItem.description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

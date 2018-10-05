@@ -1,0 +1,35 @@
+@mixin item-md-header() {
+    font-size: 1.25rem;
+    margin: 4px 0;
+}
+
+$hidden: hidden;
+
+.note{
+    font-size: 10px;
+}
+
+.item-md p{
+    font-size: 1rem;
+}
+
+.item-md h3, .item-md h4, .item-md h5, .item-md h6{ 
+    @include item-md-header();
+}
+
+.item-checkbox-checked {
+    background: #ededed;
+    color: #666;
+}
+
+.action-sheet-group{
+    overflow: $hidden;
+}
+
+.action-sheet-sub-title {
+    padding: 11px 16px 17px;
+}
+
+.list-header-md{
+    margin-bottom: 1px;
+}
